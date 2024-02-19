@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+        font-family:'Poppins', sans-serif; 
+        background-color: #e3e7eb;
+    }
+
+    .container {
+        padding: 40px 80px; 
+        margin: 70px; 
+        min-height: 500px; 
+        width: 100% auto; 
+        height: 100%; 
+        background-color: white;
+        box-shadow: 0 0 5px 0 gray;
+        border-radius: 5px;
+        display: flex;
+    }
+
+    .profile {
+        width: 50%;
+    }
+
+    .description {
+        text-align: justify;
+    }
+
+    .contact-downloadcv {
+        display: flex; 
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .button-contact {
+        background-color: black; 
+        border-radius: 25px; 
+        padding: 18px 25px; 
+        height: 20px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .icon-download {
+        height: 20px; 
+        width: 20px;
+    }
+
+    .social-media {
+        gap: 40px; 
+        padding: 0px; 
+        margin-top: 30px;
+    }
+
+    .icon-socmed {
+        height: 40px; 
+        width: 40px; 
+        margin-right: 20px;
+    }
+
+    .card {
+        margin-left: auto;
+        padding: 0px 0px 5px 0px; 
+        width: 350px; 
+        box-shadow: 0px 0px 5px 0px gray; 
+        border-radius: 10px; 
+        text-align: center;
+        align-items: end;
+    }
+
+    .photo-profile {
+        max-width: 100%; 
+        max-height: 100%; 
+        border-radius: 10px 10px 0px 0px;
+    }
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        margin: 40px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .social-media {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        align-items: center;
+        margin: auto;
+    }
+}

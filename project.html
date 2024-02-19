@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="./assets/css/project.css"/>
+        <link rel="stylesheet" href="./assets/css/navbar.css"/>
+        <meta name="viewport" content="width-device-witdh, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="nav-ul">
+                <div style="display: flex; gap: 40px; align-items: center;">
+                <li>
+                    <img src="./assets/img/dumbways.png" width="50px"/>
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="project.html" class="navbar-link active">My Project</a>
+                </li>
+                </div>
+                <div>
+                <li>
+                    <button class="button-contactme"><a href ="contact.html" class="button-link">Contact Me</a></button>
+                </li>
+                <img src="./assets/img/bars.png" class="ham-button" id="ham-button" onclick="openHam()"/>
+                </div>
+            </ul>
+
+            <div id="nav-ham-container" class="nav-ham-container hidden">
+                <a href="index.html" class="nav-ham-link ham-active">Home</a>
+                <a href="project.html" class="nav-ham-link">My Project</a>
+                <a href="contact.html" class="nav-ham-link">Contact Me</a>
+            </div>
+
+        </nav>
+    
+    </body>
+        <form onsubmit="addProject(event)">
+
+            <h1 class="title">ADD MY PROJECT</h1>
+
+            <div class="form-container">
+                <label class="label-style" for="name">Project Name</label>
+                <input class="input-style" id="name"/>
+            
+                <div style="display: flex; gap: 10px;">
+                    
+                    <div class="date">
+                        <label class="label-style" for="startdate">Start Date</label>
+                        <input type="date" class="input-style" id="startdate"/>
+                    </div>
+                    
+                    <div class="date">
+                        <label class="label-style" for="enddate">End Date</label>
+                        <input type="date" class="input-style" id="enddate"/>
+                    </div>
+                
+                </div>
+                
+                <label class="label-style" for="description">Description</label>
+                <textarea class="input-style" id="description"></textarea>
+            
+                <p class="label-style">Technologies</p>
+                
+                <div style="display: flex;">
+                    <input type="checkbox" id="nodejs"/>
+                    <label class="label-style" for="nodejs">Node Js</label>
+                    <input style="margin-left: 70px;" type="checkbox" id="nextjs"/>
+                    <label class="label-style" for="nextjs">Next Js</label>
+                </div>
+
+                <div style="display: flex; margin-bottom: 10px">
+                    <input type="checkbox" id="reactjs"/>
+                    <label class="label-style" for="reactjs">React Js</label>
+                    <input style="margin-left: 70px;" type="checkbox" id="typescript"/>
+                    <label class="label-style" for="typescript">TypeScript</label>
+                </div>
+
+                <label class="label-style">Upload Image</label>
+                
+                <div>
+                    <label for="image">
+                    <div class="image-container">
+                    <p class="choose-button">choose</p>
+                    <img class="icon-clip" src="./assets/img/file.png" alt="file"/>
+                    <input style="display: none;" type="file" id="image"/>
+                    </label>
+                </div>
+            </div>
+        
+            <button class="btn-submit">submit</button> 
+        </div>
+        </form>
+
+    <div style="padding-top: 30px; font-family: 'Poppins', sans-serif;">
+    
+            <h1 style="text-align: center;">MY PROJECT</h1>
+            <div id="contents" style="display: flex; flex-wrap: wrap; justify-content: center;">
+    </div>
+<div>
+</div>
+</div>
+<script src="./assets/js/project.js"></script>
+<script src="./assets/js/nav.js"></script>
+</html>

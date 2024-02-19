@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="./assets/css/index.css"/>
+        <link rel="stylesheet" href="./assets/css/navbar.css"/>
+        <meta name="viewport" content="width-device-witdh, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="nav-ul">
+                <div style="display: flex; gap: 40px; align-items: center;">
+                <li>
+                    <img src="./assets/img/dumbways.png" width="50px"/>
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-link active">Home</a>
+                </li>
+                <li>
+                    <a href="project.html" class="navbar-link">My Project</a>
+                </li>
+                </div>
+                <div>
+                <li>
+                    <button class="button-contactme"><a href ="contact.html" class="button-link">Contact Me</a></button>
+                </li>
+                <img src="./assets/img/bars.png" class="ham-button" id="ham-button" onclick="openHam()"/>
+                </div>
+            </ul>
+
+            <div id="nav-ham-container" class="nav-ham-container hidden">
+                <a href="index.html" class="nav-ham-link ham-active">Home</a>
+                <a href="project.html" class="nav-ham-link">My Project</a>
+                <a href="contact.html" class="nav-ham-link">Contact Me</a>
+            </div>
+
+        </nav>
+
+            <div class="container"> 
+                <div class="profile">        
+                    <h1>Hi Welcome to my hut</h1>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+                        <div class="contact-downloadcv">
+                            <button class="button-contact">
+                            <a href="https://wa.me/6281517189622" target="_blank" style="color: aliceblue; text-decoration: none; font-size: 20px;">contact</a>
+                        </button>
+                        <h3>download CV
+                            <a href="assets/doc/cv.pdf" target="_blank">
+                                <img src="assets/img/download.png" class="icon-download" />
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/jamilsatrio/" target="_blank" style="text-decoration: none;">
+                        <img src="assets/img/linkedin.png" class="icon-socmed"/>
+                        </a>
+                        <a href="https://www.instagram.com/tiopqrs" target="_blank" style="text-decoration: none;">
+                            <img src="assets/img/instagram.png" class="icon-socmed"/>
+                        </a>
+                        <a href="https://www.facebook.com/jamil.satriop" target="_blank" style="text-decoration: none;">
+                            <img src="assets/img/facebook.png" class="icon-socmed"/>
+                        </a>
+                        <a href="https://twitter.com/lah__iyo" target="_blank" style="text-decoration: none;">
+                            <img src="assets/img/twitter.png" class="icon-socmed"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                <img src="assets/img/photo.jpeg" alt="photo profile" class="photo-profile"/>
+                <h2 style="font-size: 20px;">Jamil Satrio</h2>
+                <p style="font-size: 14px;">front end developer</p>
+                </div>
+            </div>
+    </body>
+    <script src="https://kit.fontawesome.com/c7b7ae401a.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/nav.js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link rel="stylesheet" href="./assets/css/contact.css"/>
+        <link rel="stylesheet" href="./assets/css/navbar.css"/>
+        <meta name="viewport" content="width-device-witdh, initial-scale=1.0">
+    </head>
+
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <div style="display: flex; gap: 40px; align-items: center;">
+            <li>
+                <img src="./assets/img/dumbways.png" width="50px"/>
+            </li>
+            <li>
+                <a href="index.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+                <a href="project.html" class="navbar-link">My Project</a>
+            </li>
+            </div>
+            <div>
+            <li>
+                <button class="button-contactme"><a href ="contact.html" class="button-link">Contact Me</a></button>
+            </li>
+            <img src="./assets/img/bars.png" class="ham-button" id="ham-button" onclick="openHam()"/>
+            </div>
+        </ul>
+
+        <div id="nav-ham-container" class="nav-ham-container hidden">
+            <a href="index.html" class="nav-ham-link ham-active">Home</a>
+            <a href="project.html" class="nav-ham-link">My Project</a>
+            <a href="contact.html" class="nav-ham-link">Contact Me</a>
+        </div>
+    
+    </nav>
+
+        <h1 class="title">GET IN TOUCH</h1>
+        <form  onsubmit="submitdata()">
+            <label class="label-style" for="name">Name</label>
+            <input class="input-style" id="name"/>
+            <label class="label-style" for="email">Email</label>
+            <input class="input-style" id="email"/>
+            <label class="label-style" for="phonenumber">Phone Number</label>
+            <input class="input-style" id="phonenumber"/>
+            <label class="label-style" for="subject">Subject</label>
+            <select class="input-style" id="subject">
+                <option>frontend developer</option>
+                <option>backend developer</option>
+                <option>fullstack developer</option>
+            </select>
+            <label class="label-style" for="message">Your Message</label>
+            </label>
+            <textarea class="input-style" id="message"></textarea>
+            <button class="btn-submit">submit</button> 
+        </form>
+        
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/nav.js"></script>
+</body>
+</html>
